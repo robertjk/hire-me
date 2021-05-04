@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 
 import { useGetChildren } from '../api';
+import { ChildrenList } from '../ChildrenList';
 import { Pagination } from '../Pagination';
 
 import './ChildrenDashboard.css';
@@ -16,13 +17,7 @@ function ChildrenDashboard() {
         <h1>Children</h1>
       </header>
       <main>
-        <ol>
-          {childrenCurrentPage.map((child) => (
-            <li key={child.childId}>
-              {child.name.fullName}
-            </li>
-          ))}
-        </ol>
+        <ChildrenList children={childrenCurrentPage} />
       </main>
       <footer>
         <Pagination
