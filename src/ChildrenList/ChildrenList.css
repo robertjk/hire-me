@@ -7,24 +7,3 @@
   width: 100%;
   list-style-type: none;
 }
-
-.ChildrenList-child {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  align-items: center;
-  font-size: 1.25rem;
-}
-
-.ChildrenList-childName {
-  font-weight: 700;
-}
-
-.ChildrenList-childAction {
-  margin-left: auto;
-  font-size: inherit;
-}
-
-.ChildrenList-childAction--checkout {
-  color: red;
-}

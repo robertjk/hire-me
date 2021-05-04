@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 
-import { fetchChildren } from './fetchChildren';
+import { fetchChildren } from './childrenActions';
 
 
 async function fetchAndSetChildren(setChildren) {

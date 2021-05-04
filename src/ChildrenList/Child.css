@@ -1,0 +1,23 @@
+.Child-child {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  font-size: 1.25rem;
+}
+
+.Child-child.Child--checkedIn {
+  color: green;
+  font-weight: 700;
+}
+
+.Child-childName {
+  font-weight: inherit;
+}
+
+.Child-childAction {
+  margin-left: auto;
+  font-size: inherit;
+  font-weight: inherit;
+  color: inherit;
+}

@@ -1,1 +1,2 @@
-export { useGetChildren } from './useGetChildren';
+export { checkinChild, checkoutChild } from './childrenActions';
+export { useGetChildren } from './useGetChildren.js';
