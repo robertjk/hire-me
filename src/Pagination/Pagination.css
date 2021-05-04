@@ -14,16 +14,12 @@
 }
 
 .Pagination-pageButton {
-  border: 1px solid black;
-  border-radius: 3px;
-  background-color: #dfdfdf;
-  font-size: 1.20rem;
+  font-size: 1.25rem;
 }
 
 .Pagination-pageButton--currentPage {
-  color: #ffffff;
-  background-color: #404040;
-  font-weight: 700;
+  outline: 2px solid #888888;
+  font-weight: 900;
 }
 
 .Pagination-pageButton:hover {

@@ -1,4 +1,7 @@
 .ChildrenList {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 0.5rem;
   margin: 0;
   padding: 0;
   width: 100%;
@@ -6,4 +9,22 @@
 }
 
 .ChildrenList-child {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  font-size: 1.25rem;
+}
+
+.ChildrenList-childName {
+  font-weight: 700;
+}
+
+.ChildrenList-childAction {
+  margin-left: auto;
+  font-size: inherit;
+}
+
+.ChildrenList-childAction--checkout {
+  color: red;
 }

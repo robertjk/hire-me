@@ -11,7 +11,18 @@ function ChildrenList({ children }) {
           key={child.childId}
           className="ChildrenList-child"
         >
+          <p className="ChildrenList-childName">
           {child.name.fullName}
+          </p>
+          {child.checkedIn ? (
+            <button className="ChildrenList-childAction ChildrenList-childAction--checkout">
+              Checkout
+            </button>
+          ) : (
+            <button className="ChildrenList-childAction">
+              Checkin
+            </button>
+          )}
         </li>
       ))}
     </ol>
