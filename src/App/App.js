@@ -1,9 +1,11 @@
+import { ChildrenDashboard } from '../ChildrenDashboard';
+
+
 function App() {
   return (
-    <p>
-      App
-    </p>
+    <ChildrenDashboard />
   );
 }
+
 
 export { App };
