@@ -23,10 +23,12 @@ function ChildrenDashboard() {
         <ChildrenList children={childrenCurrentPage} />
       </main>
       <footer>
-        <Pagination
-          itemsAll={childrenAll}
-          setItemsCurrentPage={setChildrenCurrentPage}
-        />
+        <nav>
+          <Pagination
+            itemsAll={childrenAll}
+            setItemsCurrentPage={setChildrenCurrentPage}
+          />
+        </nav>
       </footer>
     </div>
   );
