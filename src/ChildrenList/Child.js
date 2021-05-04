@@ -8,10 +8,11 @@ import './Child.css';
 function Child({ child, className }) {
   const [checkedIn, setCheckedIn] = useState(child.checkedIn);
 
+  child.checkedIn = checkedIn;
+
   async function handleCheckinChild(child) {
     try {
       await checkinChild(child.childId);
-      child.checkedIn = true;
       setCheckedIn(true);
     } catch(error) {
       alert('Checkin unsuccessful');
@@ -21,7 +22,6 @@ function Child({ child, className }) {
   async function handleCheckoutChild(child) {
     try {
       await checkoutChild(child.childId);
-      child.checkedIn = false;
       setCheckedIn(false);
     } catch(error) {
       alert('Checkout unsuccessful');
