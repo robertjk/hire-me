@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
 
 import { useGetChildren } from '../api';
-import { ChildrenList } from '../ChildrenList';
 import { Pagination } from '../Pagination';
+
+import { ChildrenList } from './ChildrenList';
 
 import './ChildrenDashboard.css';
 

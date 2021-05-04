@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-import { checkinChild, checkoutChild } from '../api';
+import { checkinChild, checkoutChild } from '../../api';
 
 import './Child.css';
 
