@@ -14,9 +14,11 @@ function ChildrenDashboard() {
   return (
     <div className="ChildrenDashboard">
       <header>
-        <h1>Children</h1>
+        <h1 className="ChildrenDashboard-title">
+          Children
+        </h1>
       </header>
-      <main>
+      <main className="ChildrenDashboard-main">
         <ChildrenList children={childrenCurrentPage} />
       </main>
       <footer>

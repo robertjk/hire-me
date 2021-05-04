@@ -1,6 +1,16 @@
 .ChildrenDashboard {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  align-items: center;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 2rem;
+  justify-items: center;
+}
+
+.ChildrenDashboard-title {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.ChildrenDashboard-main {
+  width: 100%;
+  max-width: 20rem;
 }

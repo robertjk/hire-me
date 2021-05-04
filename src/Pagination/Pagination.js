@@ -41,7 +41,10 @@ function Pagination({
   return (
     <ol className="Pagination">
       {pages.map((page) => (
-        <li className="Pagination-page">
+        <li
+          key={page}
+          className="Pagination-page"
+        >
           <button
             onClick={() => setCurrentPage(page)}
             className={pageButtonClassName(page)}
