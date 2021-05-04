@@ -5,7 +5,7 @@ import { checkinChild, checkoutChild } from '../api';
 import './Child.css';
 
 
-function Child({ child }) {
+function Child({ child, className }) {
   const [checkedIn, setCheckedIn] = useState(child.checkedIn);
 
   async function handleCheckinChild(child) {
@@ -37,7 +37,7 @@ function Child({ child }) {
   }
 
   return (
-    <li className={childClassName()}>
+    <li className={`${childClassName()} ${className}`}>
       <p className="Child-childName">
       {child.name.fullName}
       </p>

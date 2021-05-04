@@ -12,6 +12,7 @@ function ChildrenList({ children }) {
         <Child
           key={child.childId}
           child={child}
+          className="ChildrenList-child"
         />
       ))}
     </ol>

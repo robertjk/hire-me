@@ -1,9 +1,31 @@
 .ChildrenList {
   display: grid;
   grid-template-columns: 1fr;
-  grid-gap: 0.5rem;
+  grid-gap: 2rem;
   margin: 0;
   padding: 0;
   width: 100%;
   list-style-type: none;
+}
+
+.ChildrenList-child {
+  position: relative;
+}
+
+@media (min-width: 30rem) {
+  .ChildrenList-child {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+.ChildrenList-child:not(:first-child)::before {
+  content: '';
+  position: absolute;
+  top: -1rem;
+  left: 0;
+  right: 0;
+  display: block;
+  height: 1px;
+  background-color: #dfdfdf;
 }

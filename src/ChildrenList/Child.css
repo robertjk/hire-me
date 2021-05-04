@@ -7,11 +7,12 @@
 }
 
 .Child-child.Child--checkedIn {
-  color: green;
+  color: dodgerblue;
   font-weight: 700;
 }
 
 .Child-childName {
+  margin: 0;
   font-weight: inherit;
 }
 
@@ -20,4 +21,8 @@
   font-size: inherit;
   font-weight: inherit;
   color: inherit;
+}
+
+.Child-childAction:hover {
+  cursor: pointer;
 }
